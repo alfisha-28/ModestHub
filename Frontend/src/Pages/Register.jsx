@@ -1,5 +1,5 @@
-import React from "react";
-import '../Register.css';
+import { Link, useNavigate } from 'react-router-dom';
+import '../Styles/Register.css';
 import logo from "../assets/logo.png";   // Your provided ModestHub logo
 import registerPic from "../assets/register.png"; // Girl illustration
 
@@ -12,7 +12,7 @@ export default function Register() {
         {/* Logo */}
         <div className="logo-title">
           <img src={logo} alt="ModestHub Logo" className="logo" />
-          <h1 className="brand-name">MODESTHUB</h1>
+          <h1 className="title">MODESTHUB</h1>
         </div>
 
         {/* Title */}
@@ -31,7 +31,7 @@ export default function Register() {
         {/* Footer */}
         <p className="footer-text">
           Already have an Account?{" "}
-          <a href="#">Click here to Login</a>
+          <Link to="/login">Click here to Login</Link>
         </p>
       </div>
 
